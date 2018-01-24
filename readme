@@ -1,0 +1,6 @@
+https://lit-mountain-72539.herokuapp.com/
+heroku git:remote -a lit-mountain-72539
+heroku config:set DISABLE_COLLECTSTATIC=1
+git push heroku master
+heroku ps:scale web=1
+heroku open
